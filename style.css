@@ -22,8 +22,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -62,9 +62,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -76,53 +76,113 @@ select {
 }
 /*RESET CSS End*/
 
-
-
 /*Mobile View*/
 body {
-    background-color: hsl(0, 0%, 81%);
+  background-color: hsl(0, 0%, 81%);
+  font-size: 13px;
 }
 .flex-container {
-    display: flex;
-    flex-direction: column;
-    padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .boxes {
- padding: 2rem;
- margin: 1rem;
- border-radius: 16px; 
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 16px;
+  max-width: 370px;
 }
-.box-1{
-    background-color: hsl(263, 55%, 52%);
-    display: flex;
-    flex-direction: column;
+h2 {
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 1rem;
 }
-.box-2{
-    background-color: hsl(217, 19%, 35%);
+h4 {
+  color: hsl(0, 0%, 81%);
 }
-.box-3{
-    background-color: hsl(0, 0%, 100%);
+p {
+  color: hsl(0, 0%, 81%);
+  opacity: 70%;
 }
-.box-4{
-    background-color: hsl(219, 29%, 14%);
+.name p {
+  color: hsl(0, 0%, 81%);
+  opacity: 50%;
 }
-.box-5{
-    background-color: hsl(0, 0%, 100%);
+.box-1 {
+  background-color: hsl(263, 55%, 52%);
+  display: flex;
+  flex-direction: column;
 }
-img {
-    border-radius: 30px;
-    width: 3rem;
+.box-1-contents {
+  margin-top: -5rem;
 }
-.creds{
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
+.box-2 {
+  background-color: hsl(217, 19%, 35%);
+}
+.box-3 {
+  background-color: hsl(0, 0%, 100%);
+}
+.box-3 h2 {
+  color: hsl(219, 29%, 14%);
+}
+.box-3 .name h4 {
+  color: hsl(219, 29%, 14%);
+}
+.box-3 .name p {
+  color: hsl(219, 29%, 14%);
+}
+.box-3 p {
+  color: hsl(219, 29%, 14%);
+}
+.box-4 {
+  background-color: hsl(219, 29%, 14%);
+}
+.box-5 {
+  background-color: hsl(0, 0%, 100%);
+}
+.box-5 h2 {
+  color: hsl(219, 29%, 14%);
+}
+.box-5 .name h4 {
+  color: hsl(219, 29%, 14%);
+}
+.box-5 .name p {
+  color: hsl(219, 29%, 14%);
+}
+.box-5 p {
+  color: hsl(219, 29%, 14%);
+}
+.profile {
+  border-radius: 30px;
+  width: 2.5rem;
+}
+.quotation {
+  width: 6rem;
+  margin-left: 12rem;
+  margin-top: -2rem;
+}
+.creds {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  margin-left: -1rem;
+  margin-top: -1rem;
 }
 .name {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 /*Desktop View*/
 @media (min-width: 600px) {
-  
-
+  .flex-container {
+    display: grid;
+  }
+  .desktop-1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+  .box-5 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
