@@ -90,7 +90,6 @@ body {
   padding: 2rem;
   margin: 1rem;
   border-radius: 16px;
-  max-width: 370px;
 }
 h2 {
   color: hsl(0, 0%, 100%);
@@ -171,18 +170,49 @@ p {
   padding-left: 1rem;
 }
 /*Desktop View*/
-@media (min-width: 600px) {
+@media (min-width: 1300px) {
   .flex-container {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1440px;
+    gap: 10px;
   }
-  .desktop-1 {
-    grid-row-start: 1;
-    grid-column-start: 1;
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .box-5 {
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column: 3;
+    margin-top: -22rem;
+    margin-left: -2rem;
+    height: 43rem;
+    width: 15rem;
+  }
+  .box-3 {
+    grid-column: 1;
+    width: 18rem;
+    height: 20rem;
+  }
+  .box-4 {
+    width: 40rem;
+    grid-column: 2;
     grid-column-start: 2;
     grid-column-end: 3;
+    margin-left: -22rem;
+  }
+  .box-2 {
+    width: 18rem;
+    grid-column: 2;
+    margin-left: -0.5rem;
+  }
+  .box-1 {
+    width: 40rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .quotation {
+    margin-left: 25rem;
   }
 }
