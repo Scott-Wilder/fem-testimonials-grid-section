@@ -1,6 +1,8 @@
 # Frontend Mentor - Testimonials grid section
 
-![Design preview for the Testimonials grid section coding challenge]
+![Design preview for the Testimonials grid section coding challenge] 
+
+![](https://github.com/Scott-Wilder/scott-wilder.github.io/blob/main/images/desktop_solution.PNG)
 
 ## Welcome! 👋
 
